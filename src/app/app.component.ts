@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -17,12 +18,13 @@ export class AppComponent {
   }
   names: string[] = ['nico', 'juli', 'santi'];
   newName = '';
-  products = [
+  products: Product[] = [
     {
       name: 'EL mejor juguete',
       price: 565,
       image: './assets/images/toy.jpg',
-      },
+      category: 'all'
+    },
     {
       name: 'Bicicleta casi nueva',
       price: 356,
