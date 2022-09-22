@@ -12,6 +12,13 @@ export class AppComponent {
   age = 18;
   img = "https://i.blogs.es/bbe976/12260-simone-cmoon/1366_2000.webp";
   btnDisabled = true;
+
+  register = {
+    name:"",
+    email: "",
+    password: "",
+  }
+
   person = {
     name: "Lucia",
     age: 18,
@@ -86,4 +93,10 @@ export class AppComponent {
     this.names.splice(index, 1);
   }
 
+  onRegister() {
+    console.log(this.register);
+  }
+
+
 }
+
